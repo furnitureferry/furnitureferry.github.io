@@ -1,1 +1,92 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <meta charset="utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>billiam</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body id="home">
+  <script type="text/javascript">
+    function bar(x) {
+      return x + String.fromCharCode(46)
+    }
+    function baz(x) {
+      return x + String.fromCharCode(64)
+    }
+    function qux(x) {
+      return x + ':'
+    }
+    function quux(x) {
+      return 'mailto' + x
+    }
+    function foo() {
+      var window = quux(qux('')) + bar(baz(bar('billiam')+'public')+'gmail')+'com'
+      document.getElementById('404').setAttribute('href', window)
+    }
+    if (window.attachEvent) {
+        window.attachEvent('onload', foo)
+    } else {
+        if (window.onload) {
+            var curronload = window.onload
+            var newonload = function(evt) {
+                curronload(evt)
+                foo(evt)
+            }
+            window.onload = newonload
+        } else {
+            window.onload = foo
+        }
+    }
+  </script>
+  <section>
+    <p>
+      Hey! I'm Billiam.
+    </p>
+    <p>
+      A software engineer and photographer
+      <br>
+      with an addiction for learning new things.
+    </p>
+    <p>
+      From China & Vancouver, now in Stockholm.
+    </p>
+  </section>
+
+<div id="perspectiveParent">
+
+  <div class="btn">
+    <div class="btn-back">
+      <a href="https://github.com/billiamliu" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/billiam.io" target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/billiamliu" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a id="404" href="mailto:billiam.public@gmail.com">
+        <i class="fa fa-envelope"></i>
+      </a>
+      <div class="shadow-back"></div>
+    </div>
+
+    <div class="btn-front">
+      <i class="fa fa-link"></i>
+      <div class="shadow-front"></div>
+    </div>
+  </div>
+
+</div>
+
+
+	<script src="flipside.js"></script>
+
+</body>
+</html>
+
